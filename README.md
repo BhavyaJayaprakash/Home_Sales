@@ -4,41 +4,40 @@ Module 22 challenge
 
  In this challenge, you'll use your knowledge of SparkSQL to determine key metrics about home sales data. Then you'll use Spark to create temporary views, partition the data, cache and uncache a temporary table, and verify that the table has been uncached.
 
- ## Instructions
+ ## Instructions and Results
 1. Rename the Home_Sales_starter_code.ipynb file as Home_Sales.ipynb.
 2. Import the necessary PySpark SQL functions for this assignment.
    
-4.  ![image](https://github.com/user-attachments/assets/d2271d84-78fc-4a96-a4e3-749e65a1b6d9)
+  ![image](https://github.com/user-attachments/assets/d2271d84-78fc-4a96-a4e3-749e65a1b6d9)
 
-5. Read the home_sales_revised.csv from the provided AWS S3 bucket location into a PySpark DataFrame.
+3. Read the home_sales_revised.csv from the provided AWS S3 bucket location into a PySpark DataFrame.
 
-6. ![Screenshot 2025-04-03 214335](https://github.com/user-attachments/assets/4cbe8edb-c496-4621-bc1a-324f15d5a60a)
+ ![Screenshot 2025-04-03 214335](https://github.com/user-attachments/assets/4cbe8edb-c496-4621-bc1a-324f15d5a60a)
 
-7. Create a temporary table called home_sales.
+4. Create a temporary table called home_sales.
 
-8. ![Screenshot 2025-04-03 214352](https://github.com/user-attachments/assets/5434ef97-db7a-4f86-a1de-b551ea19691c)
+ ![Screenshot 2025-04-03 214352](https://github.com/user-attachments/assets/5434ef97-db7a-4f86-a1de-b551ea19691c)
 
-9. Answer the following questions using SparkSQL:
+5. Answer the following questions using SparkSQL:
   What is the average price for a four-bedroom house sold for each year? Round off your answer to two decimal places.
 
 ![Screenshot 2025-04-03 214417](https://github.com/user-attachments/assets/dcbb94ce-ef5b-491a-8ad0-b0db045c5546)
 
 
-  What is the average price of a home for each year the home was built, that has three bedrooms and three bathrooms? Round off your answer to two decimal places.
+ 6. What is the average price of a home for each year the home was built, that has three bedrooms and three bathrooms? Round off your answer to two decimal places.
 
   
   ![Screenshot 2025-04-03 214451](https://github.com/user-attachments/assets/95f1b4ef-677c-4832-a207-75eb685f4ef5)
 
-  What is the average price of a home for each year the home was built, that has three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet? Round off your answer to two decimal places.
+ 7. What is the average price of a home for each year the home was built, that has three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet? Round off your answer to two decimal places.
   
   ![Screenshot 2025-04-03 214518](https://github.com/user-attachments/assets/a2c28bb5-bbdf-4b88-a778-0ecfdca9cad9)
 
-6. What is the average price of a home per "view" rating having an average home price greater than or equal to $350,000? Determine the run time for this query, and round off your answer to two decimal places.
+8. What is the average price of a home per "view" rating having an average home price greater than or equal to $350,000? Determine the run time for this query, and round off your answer to two decimal places.
 
 ![Screenshot 2025-04-03 214553](https://github.com/user-attachments/assets/a18da421-e395-41d2-bb9b-5fbbefed2926)
 ![Screenshot 2025-04-03 214600](https://github.com/user-attachments/assets/be46e69d-91c7-466b-8017-71d77e40edb2)
 
-7. 
 8. Cache your temporary table home_sales.
 10. Check if your temporary table is cached.
 
@@ -66,4 +65,8 @@ Uncache the home_sales temporary table.
 ![Screenshot 2025-04-03 214943](https://github.com/user-attachments/assets/5a7f50e3-b92a-44ef-b109-0f60d33272b5)
 
 21. Verify that the home_sales temporary table is uncached using PySpark.
-22. Download your Home_Sales.ipynb file and upload it into your "Home_Sales" GitHub repository.
+
+ # Uncached Runtime --- 1.0180721282958984 seconds ---
+# Cached Runtime --- 0.9337108135223389  seconds ---
+
+23. Download your Home_Sales.ipynb file and upload it into your "Home_Sales" GitHub repository.
